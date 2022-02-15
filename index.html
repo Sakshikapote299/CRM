@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ body{
+     background-color:#FFFDDE;
+ }   
+ul {
+  list-style-type: none;
+  
+  padding: 7px;
+  overflow: hidden;
+  background-color: #070707;
+  
+}
+
+li {
+  float: left;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: rgb(230, 218, 218);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.s{
+    margin-left: 200px;
+    margin-top: 100px;
+   outline-style: groove;   
+   outline-color: #dfce6f;
+   margin-right: 200px;
+   padding: 100px;
+   font-size: 20px;
+
+   
+}
+.v{
+    margin-left: 200px;
+    margin-top: 100px;
+   outline-style: groove;
+   outline-color: hsl(50, 53%, 93%);
+   margin-right: 200px;
+   padding: 100px;
+   font-size: 20px;
+
+   
+}
+.ss{
+    margin-left: 200px;
+    margin-top: 100px;
+   outline-style: groove;
+   outline-color: #dfce6f;
+   margin-right: 200px;
+   padding: 100px;
+   font-size: 20px;
+
+   
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1;}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">All Task</a>
+      <a href="#">My task</a>
+      <a href="#">Post Task</a>
+      <a href="#">Profile</a>
+      <a href="#">Change Password</a>
+      <li><a href="#home">Home</a></li>
+  <li><a href="#Help each other">Help each other</a></li>
+  
+  <li style="float:right"><a class="active" href="#LogOut">LogOut</a></li>
+
+    </div>
+  </li>
+</ul>
+
+<div class="s">
+    <P >Task 1: Write a api
+        <br>
+        <br><br><br><br><br>
+
+        
+          <button style="background-color: #D9D7F1;padding: 10px 24px;border:#D9D7F1" v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+          <button style="background-color: #D9D7F1;padding: 10px 24px;border:#D9D7F1";  type="submit">Submit    </button>
+    </P>
+
+</div>
+<div class="v">
+    <P >Task 2 : Write a code to verify email.
+        <br>
+        <br><br><br><br><br>
+
+         <button style="background-color: #D9D7F1;padding: 10px 24px;border:#D9D7F1"  type="submit">Submit    </button>&nbsp;
+        <button style="background-color: #D9D7F1;padding: 10px 24px; border:#D9D7F1 ;"  type="Comment"> Comment</button>
+    </P>
+
+</div>
+
+<div class="ss">
+    <P >Task 3: Write a code to verify phone number.
+        <br>
+        <br><br><br><br><br>
+
+         <button style="background-color: #D9D7F1;padding: 10px 24px;border:#D9D7F1"  type="submit">Submit    </button>&nbsp;
+        <button style="background-color: #D9D7F1;padding: 10px 24px; border:#D9D7F1 ;"  type="Comment"> Comment</button>
+    </P>
+
+</div>
+
+
+
+</body>
+</html>
+
+
